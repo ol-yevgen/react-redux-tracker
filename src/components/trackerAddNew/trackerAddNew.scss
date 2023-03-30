@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+.add {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 3px;
+
+    border: 1px solid $blackColor;
+    border-radius: 35px;
+
+    &-track {
+        padding: 0 15px;
+        width: calc(100% - 45px);
+
+        border: none;
+        border-radius: 35px;
+
+        font-size: 1.1rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus~.add {
+            border: 3px solid $redColor;
+        }
+    }
+
+    &-btn {
+        width: 40px !important;
+        height: 40px !important;
+
+        border: none;
+        background: $greenColor;
+
+        transition: all .6s;
+    }
+}
+
+.add-container {
+    width: 100%;
+    padding: 0 20px;
+}

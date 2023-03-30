@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 3px;
+
+    border-top: 1px solid #cbcbcb;
+
+    &:last-child {
+        border-bottom: 1px solid #cbcbcb;
+    }
+
+    &-desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+
+        font-size: 0.8rem;
+
+        &--name {
+            font-size: .8rem;
+        }
+
+        &--time {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        width: 80%;
+    }
+
+    &-actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 20%;
+    }
+}
+
+.btn-action {
+    width: 25px;
+    height: 25px;
+    background: $bgTransparent;
+}
+
+.btn-start {
+    border: 2px solid $blackColor;
+    transition: all .6s;
+}
+
+.btn-delete {
+    border: 2px solid $redColor;
+    transition: all .6s;
+}
+
+.active {
+    color: $greenColor;
+    background-color: #fbfff8;
+}
