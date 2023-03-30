@@ -32,7 +32,7 @@ const TrackersList = () => {
             return a
         }
 
-        request(`http://localhost:3001/trackers/${id}`, 'PATCH', JSON.stringify(changeStatus(trackers)))
+        request(`https://trackers-mky8.onrender.com/trackers/${id}`, 'PATCH', JSON.stringify(changeStatus(trackers)))
             .then(dispatch(trackersChangeStatus(id)))
             .catch(err => console.log(err))
         // eslint-disable-next-line  
@@ -40,7 +40,7 @@ const TrackersList = () => {
 
 
     const onDelete = useCallback((id) => {
-        request(`http://localhost:3001/trackers/${id}`, 'DELETE')
+        request(`https://trackers-mky8.onrender.com/trackers/${id}`, 'DELETE')
             .then(dispatch(trackersDelete(id)))
             .catch(err => console.log(err))
         // eslint-disable-next-line  

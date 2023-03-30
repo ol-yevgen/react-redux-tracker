@@ -10,7 +10,7 @@ export const fetchTrackers = createAsyncThunk(
     'trackers/fetchTrackers',
     () => {
         const { request } = useHttp();
-        return request("http://localhost:3001/trackers")
+        return request("https://trackers-mky8.onrender.com/trackers")
     }
 )
 

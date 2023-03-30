@@ -29,7 +29,7 @@ const TrackerAddNew = () => {
             newTracker.name = moment().format('DD/MM/YYYY HH:mm')
         }
 
-        request('http://localhost:3001/trackers', 'POST', JSON.stringify(newTracker))
+        request('https://trackers-mky8.onrender.com/trackers', 'POST', JSON.stringify(newTracker))
             .then(dispatch(trackersCreated(newTracker)))
             .catch(err => console.log(err))
 

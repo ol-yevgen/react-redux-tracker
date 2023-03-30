@@ -17,7 +17,7 @@ const TrackersListItem = ({ name, time, play, onDelete, onChangeStatus, id }) =>
         if (play) {
             interval = setInterval(() => {
                 setTime(prevTime => prevTime + 1)
-                request(`http://localhost:3001/trackers/${id}`, 'PATCH', JSON.stringify({ time: time + timeTracker + 1}))
+                request(`https://trackers-mky8.onrender.com/trackers/${id}`, 'PATCH', JSON.stringify({ time: time + timeTracker + 1}))
                     .catch(err => console.log(err))
             }, 1000)
         } else {
