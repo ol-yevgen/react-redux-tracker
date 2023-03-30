@@ -12,6 +12,7 @@
 /build
 
 # misc
+react-redux-tracker--data
 .DS_Store
 .env.local
 .env.development.local
